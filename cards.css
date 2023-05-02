@@ -1,0 +1,142 @@
+#cards-container{
+
+    width: 1200px;
+    margin-top: 50px;
+    
+    align-self: center;
+
+    display: grid;
+    gap: 30px;  
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 380px);
+
+    grid-template-areas: 
+
+        "card1 card2 card3"
+        "card4 card5 card6"
+        ;    
+}
+
+#card1{
+
+    grid-area: card1;
+}
+
+#card2{
+
+    grid-area: card2;
+}
+
+#card3{
+
+    grid-area: card3;
+}
+
+#card4{
+
+    grid-area: card4;
+}
+
+#card5{
+
+    grid-area: card5;
+}
+
+
+#card6{
+
+    grid-area: card6;
+}
+
+.card {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.image-card {
+
+    border-radius: 30px 30px 0 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-bottom{
+
+    font-display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    background-color: #ffffff;
+    border-radius: 0 0 30px 30px;
+    border: 1px solid #F5E0DB;
+}
+
+.card-title{
+
+    padding: 5px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    color: #222222;
+}
+
+.add-to-cart-button{
+
+    margin-left: 60%;
+    background-color: #FF3C00;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    padding: 10px 30px;
+    border-radius: 15px 0 15px 0;
+
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+
+@media(max-width: 1300px){
+
+    #cards-container{
+
+        width: 100%;
+        margin-top: 30px;
+        
+        align-self: center;
+    
+        display: grid;
+        gap: 10px;  
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 380px);
+    
+        grid-template-areas: 
+    
+            "card1 card2" 
+            "card3 card4"
+            "card5 card6"
+            ;   
+    }
+
+}
+
+@media(max-width: 1000px){
+
+    #main-area {
+
+        padding: 0 10%;
+    }
+}
+
+@media(max-width: 600px){
+
+    #main-area {
+
+        padding: 0 2%;
+    }
+}
